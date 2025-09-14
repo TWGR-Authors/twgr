@@ -42,16 +42,8 @@ j.has_friend(g)
 g.has_friend(p)
 r.has_hobby("rings")
 Person.all_with_friends(p).each do |person|
+  puts "#{person.name} is friends with #{p.name}"
+end
+Person.all_with_hobbies("rings").each do |person|
   puts "#{person.name} is into rings"
 end
-
-e = Person.new("Eric B.")
-r = Person.new("Rakim")
-e.has_friend(r)
-e.has_hobby("cycling")
-r.has_hobby("drums")
-
-Person.all_with_hobbies("cycling").each do |person|
-  puts "#{person.name} is into #{person.hobbies.first}."
-end
-

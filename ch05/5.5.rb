@@ -1,6 +1,6 @@
 class C
-  def x(value_for_a, recurse=false)
-    a = value_for_a
+  def x(value_for_a,recurse=false)
+    a = value_for_a                        #2
     print "Here's the inspect-string for 'self':"
     p self
     puts "And here's a:"

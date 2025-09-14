@@ -1,10 +1,10 @@
 module MeFirst
   def report
-    puts "Hello from module"
+    puts "Hello from module!"
   end
 end
 class Person
-  include MeFirst
+  prepend MeFirst
   def report
     puts "Hello from class!"
   end

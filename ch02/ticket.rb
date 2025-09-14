@@ -1,7 +1,7 @@
 ticket = Object.new
 
 def ticket.date
- "2003-02-01"
+ "1903-02-01"
 end
 def ticket.venue
  "Town Hall"

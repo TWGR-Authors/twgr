@@ -9,7 +9,7 @@ class C
     if c.n > n
       puts "The other object's n is bigger."
     else
-      puts "the other object's n is the same or smaller."
+      puts "The other object's n is the same or smaller."
     end
   end
   protected :n
