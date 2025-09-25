@@ -4,3 +4,5 @@ class Symbol
     Proc.new { |obj| obj.public_send(self) }
   end
 end
+
+p %w( david black ).map(&:capitalize)

@@ -5,7 +5,7 @@ while (conn = s.accept)
     c.print "Hi. What's your name? "
     name = c.gets.chomp
     c.puts "Hi, #{name}. Here's the date."
-    c.puts `date`
+    c.puts Time.now.strftime("%c")
     c.close
   end
 end
