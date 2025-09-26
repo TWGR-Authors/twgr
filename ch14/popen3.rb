@@ -10,9 +10,9 @@ u = Thread.new do
     str << stdout.gets
     n += 1
     if n % 3 == 0
-      puts "--------\n"
+      puts "--------"
       puts str
-      puts "--------\n"
+      puts "--------"
       str = ""
     end
   end
