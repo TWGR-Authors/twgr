@@ -23,8 +23,8 @@ class TicketComparer
   end
 end
 
-ticket1 = Ticket.new("ticket1", "Town Hall", "07/08/25") 
-ticket2 = Ticket.new("ticket2", "Convention Center", "07/08/25") 
-ticket3 = Ticket.new("ticket3", "Town Hall", "08/09/25") 
+ticket1 = Ticket.new("ticket1", "Town Hall", "07/08/25")
+ticket2 = Ticket.new("ticket2", "Convention Center", "07/08/25")
+ticket3 = Ticket.new("ticket3", "Town Hall", "08/09/25")
 puts "#{ticket1.name} is for an event on: #{ticket1.date}."
 TicketComparer.compare(ticket1, ticket2, ticket3)
