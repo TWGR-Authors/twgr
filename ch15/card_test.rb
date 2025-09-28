@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'cards'
 
-class CardTest < MiniTest::Test
+class CardTest < Minitest::Test
   def setup
     @deck = PlayingCards::Deck.new
   end
