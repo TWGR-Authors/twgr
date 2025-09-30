@@ -6,7 +6,8 @@ module CallerTools
       @program, @line, @meth = CALL_RE.match(string).captures
     end
     def to_s
-      "%30s%6s%25s" % [program, line, meth]
+      width = meth.size + 3
+      "%30s%6s%#{width}s" % [program, line, meth]
     end
   end
 

@@ -7,7 +7,7 @@ class CardTest < MicroTest
   end
   def test_deal_one
     @deck.deal
-    assert_equal(51, @deck.size)
+    assert_equal(50, @deck.size)
   end
   def test_deal_many
     @deck.deal(5)

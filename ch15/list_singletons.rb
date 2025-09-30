@@ -15,3 +15,4 @@ p c.singleton_methods.sort
 class << c
   p private_instance_methods(false)
 end
+binding.irb
