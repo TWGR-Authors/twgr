@@ -10,6 +10,6 @@ class PlayingCard
     end
   end
 end
+
 deck = PlayingCard::Deck.new(2)
 p deck.cards.size
-
