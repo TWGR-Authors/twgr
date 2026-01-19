@@ -1,7 +1,7 @@
 require_relative 'stateless_report_card'
 
 class Grade
-  def self.calculate_grade(scores)
+  def self.calculate(scores)
     case scores.sum / scores.size
     when 90..100
       "A"
@@ -16,8 +16,8 @@ class Grade
     end
   end
 end
-physics_grade = Grade.calculate_grade([78,92,90])
-chemistry_grade = Grade.calculate_grade([90,80,88])
-biology_grade = Grade.calculate_grade([99,90,98])
+physics_grade = Grade.calculate([78,92,90])
+chemistry_grade = Grade.calculate([90,80,88])
+biology_grade = Grade.calculate([99,90,98])
 
 ReportCard.issue("Joe", physics_grade, chemistry_grade, biology_grade)
