@@ -1,4 +1,3 @@
-require_relative 'callertools'
 class MicroTest
   def self.inherited(c)
     c.class_eval do
@@ -19,9 +18,8 @@ class MicroTest
       true
     else
       puts "Assertion failed:"
-      stack = CallerTools::Stack.new
-      failure = stack.find { |call| call.meth !~ /assert/ }
-      puts failure
+      stack = caller_locations
+      puts stack.find { |call| call.label !~ /assert/ }
       false
     end
   end
